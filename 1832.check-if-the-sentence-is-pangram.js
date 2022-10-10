@@ -13,7 +13,7 @@ var checkIfPangram = function(sentence) {
     
     let counter = 0;
     
-    if (sentence.length < 26) {
+    if (sentence.length < alphabet.length) {
         return false;
     }
     
@@ -23,9 +23,5 @@ var checkIfPangram = function(sentence) {
         }
     }
     
-    if (counter >= 26) {
-        return true;
-    } else {
-        return false;
-    }
+    return counter === alphabet.length;
 };
