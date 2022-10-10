@@ -19,13 +19,10 @@ var findGCD = function(nums) {
 
 //Pick up greatest common divisor 
 const pickUpNumber = function(maxiNumber, miniNumber) {    
-    let gcd = 1;
     
     for (let i = miniNumber; i >= 1; i--) {
         if (maxiNumber % i == 0 && miniNumber % i == 0) {
-            gcd = Math.max(gcd, i);
+            return i;
         }
     }
-    
-    return gcd;
 };
