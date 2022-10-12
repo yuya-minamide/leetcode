@@ -1,4 +1,9 @@
 /**
+ * URL of this problem
+ * https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/
+ */
+
+/**
  * @param {number[]} startTime
  * @param {number[]} endTime
  * @param {number} queryTime
