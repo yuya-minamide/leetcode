@@ -10,7 +10,7 @@
 
 var subtractProductAndSum = function(n) {
     
-    let stringNumber = n.toString();
+    const stringNumber = n.toString();
     
     let productNumber = 1;
     let sumNumber = 0;
