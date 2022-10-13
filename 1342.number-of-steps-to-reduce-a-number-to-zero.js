@@ -15,11 +15,10 @@ var numberOfSteps = function(num) {
     while(num !== 0) {
         if (num % 2 === 1) {
             num = num - 1;
-            counter++;
         } else if (num % 2 === 0) {
             num = num / 2;
-            counter++;
         }
+        counter++;
     }
     
     return counter;
