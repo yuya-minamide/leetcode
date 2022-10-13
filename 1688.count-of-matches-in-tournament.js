@@ -16,7 +16,7 @@ var numberOfMatches = function(n) {
             totalMatch = totalMatch + (n - 1) / 2;
             n = (n -1) / 2 + 1;
         } else if (n % 2 === 0) {
-            totalMatch = totalMatch + n / 2;
+            totalMatch += n / 2;
             n = n / 2;
         }
     }
