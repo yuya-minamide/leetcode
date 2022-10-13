@@ -9,8 +9,8 @@
  */
 var sortArrayByParity = function(nums) {
     
-    let evenNumber = nums.filter((a) => a % 2 === 0);
-    let oddNumber = nums.filter((a) => a % 2 === 1);
+    const evenNumbers = nums.filter((a) => a % 2 === 0);
+    const oddNumbers = nums.filter((a) => a % 2 === 1);
     
-    return evenNumber.concat(oddNumber);
+    return evenNumbers.concat(oddNumbers);
 };
