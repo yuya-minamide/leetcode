@@ -7,20 +7,19 @@
  * @param {number[]} arr
  * @return {number}
  */
-var sumOddLengthSubarrays = function(arr) {
-    
+var sumOddLengthSubarrays = function(arr) {   
     let totalNumber = 0;
     
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = arr.length - 1; j >= i; j--) {
+            let oddLengArr = (arr.slice(i, j + 1));
             
-            let target = (arr.slice(i, j + 1));
-            
-            if (target.length % 2 !== 0) {                
-                let targetTotall = target.reduce((previousValue , currentValue) => previousValue  + currentValue, 0);                
-                totalNumber = totalNumber + targetTotall;
+            if (oddLengArr.length % 2 !== 0) {
+                const oddLengArrTotal = oddLengArr.reduce((sum, curr) => sum + curr, 0);
+                totalNumber += oddLengArrTotal;
             }
         }
     }
+    
     return totalNumber;   
 };
