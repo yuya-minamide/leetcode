@@ -8,6 +8,6 @@
  * @return {number}
  */
 var minimumSum = function(num) {
-    const number = num.toString().split("").sort();
-    return Math.floor(number[0] + number[2]) +  Math.floor(number[1] + number[3]);
+    const numbers = num.toString().split("").sort();
+    return Math.floor(numbers[0] + numbers[2]) +  Math.floor(numbers[1] + numbers[3]);
 };
