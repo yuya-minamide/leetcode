@@ -16,5 +16,5 @@ var findTheDifference = function(s, t) {
 		if (tArr[i] !== sArr[i]) {
             return tArr[i];
         }
-	}
+    }
 };
