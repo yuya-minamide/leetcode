@@ -17,5 +17,5 @@ var thirdMax = function(nums) {
     //Sort in order of largest to smallest
     const sortedNums = uniqueNums.sort((a, b) => b - a);
     
-    return uniqueNums[2];
+    return sortedNums[2];
 };
