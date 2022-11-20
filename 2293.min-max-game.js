@@ -10,6 +10,8 @@
 var minMaxGame = function (nums) {
 	let numsArr = [...nums];
 
+	if (numsArr.length === 1) return numsArr[0];
+
 	while (numsArr.length >= 2) {
 		const newNums = [];
 
