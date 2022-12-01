@@ -12,7 +12,7 @@ var maxProduct = function (nums) {
 	const SortedNums = nums.sort((a, b) => b - a);
 
 	const HighestNumIndex = nums.indexOf(SortedNums[0]);
-	const SecondHigestNumIndex = nums.indexOf(SortedNums[1]);
+	const SecondHighestNumIndex = nums.indexOf(SortedNums[1]);
 
-	return (nums[HighestNumIndex] - 1) * (nums[SecondHigestNumIndex] - 1);
+	return (nums[HighestNumIndex] - 1) * (nums[SecondHighestNumIndex] - 1);
 };
