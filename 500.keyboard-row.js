@@ -8,21 +8,21 @@
  * @return {string[]}
  */
 var findWords = function (words) {
-	const FirstLineOfArr = /[qwertyuiop]/g;
-	const SecondLineOfArr = /[asdfghjkl]/g;
-	const ThirdLineOfArr = /[zxcvbnm]/g;
+	const FirstLineOfChar = /[qwertyuiop]/g;
+	const SecondLineOfChar = /[asdfghjkl]/g;
+	const ThirdLineOfChar = /[zxcvbnm]/g;
 	const Result = [];
 
 	for (let i = 0; i < words.length; i++) {
-		if (words[i].toLowerCase().match(FirstLineOfArr)?.length === words[i].length) {
+		if (words[i].toLowerCase().match(FirstLineOfChar)?.length === words[i].length) {
 			Result.push(words[i]);
 			continue;
 		}
-		if (words[i].toLowerCase().match(SecondLineOfArr)?.length === words[i].length) {
+		if (words[i].toLowerCase().match(SecondLineOfChar)?.length === words[i].length) {
 			Result.push(words[i]);
 			continue;
 		}
-		if (words[i].toLowerCase().match(ThirdLineOfArr)?.length === words[i].length) {
+		if (words[i].toLowerCase().match(ThirdLineOfChar)?.length === words[i].length) {
 			Result.push(words[i]);
 			continue;
 		}
