@@ -1,6 +1,6 @@
 /**
  * URL of this problem
- * https://leetcode.com/problems/find-the-pivot-integer/
+ * https://leetcode.com/problems/self-dividing-numbers/
  */
 
 /**
