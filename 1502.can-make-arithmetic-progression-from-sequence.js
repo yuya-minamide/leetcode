@@ -8,7 +8,7 @@
  * @return {boolean}
  */
 var canMakeArithmeticProgression = function (arr) {
-	const SortedArr = arr.sort((a, b) => b - a);
+	const SortedArr = arr.sort((a, b) => a - b);
 	const DifNum = arr[1] - arr[0];
 
 	for (let i = 0; i < arr.length - 1; i++) {
