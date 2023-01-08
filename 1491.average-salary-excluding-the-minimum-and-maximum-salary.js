@@ -1,6 +1,6 @@
 /**
  * URL of this problem
- * https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
+ * https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
  */
 
 /**
