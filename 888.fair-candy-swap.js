@@ -11,8 +11,8 @@
 var fairCandySwap = function (aliceSizes, bobSizes) {
 	const Result = [];
 
-	let SamOfAlice = aliceSizes.reduce((acc, cur) => acc + cur, 0);
-	let SamOfBob = bobSizes.reduce((acc, cur) => acc + cur, 0);
+	const SamOfAlice = aliceSizes.reduce((acc, cur) => acc + cur, 0);
+	const SamOfBob = bobSizes.reduce((acc, cur) => acc + cur, 0);
 	const Def = SamOfAlice - SamOfBob;
 
 	for (let i = 0; i < aliceSizes.length; i++) {
