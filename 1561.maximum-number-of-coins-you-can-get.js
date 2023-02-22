@@ -11,8 +11,8 @@ var maxCoins = function (piles) {
 	const SortedPiles = piles.sort((a, b) => a - b);
 	let sum = 0;
 
-	for (let i = piles.length / 3; i < piles.length; i += 2) {
-		sum += piles[i];
+	for (let i = SortedPiles.length / 3; i < SortedPiles.length; i += 2) {
+		sum += SortedPiles[i];
 	}
 
 	return sum;
