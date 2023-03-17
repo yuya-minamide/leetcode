@@ -15,11 +15,11 @@ var bestHand = function (ranks, suits) {
 	for (i = 0; i < ranks.length; i++) {
 		RanksMap.set(ranks[i], (RanksMap.get(ranks[i]) ?? 0) + 1);
 	}
-	let result = "";
+	let temp = "";
 	RanksMap.forEach((value) => {
-		if (value > 2) result = "Three of a Kind";
+		if (value > 2) temp = "Three of a Kind";
 	});
-	if (result !== "") return result;
+	if (temp !== "") return temp;
 
 	if (new Set(ranks).size < 5) return "Pair";
 
