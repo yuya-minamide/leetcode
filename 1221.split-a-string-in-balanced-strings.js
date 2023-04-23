@@ -7,6 +7,7 @@
  * @param {string} s
  * @return {number}
  */
+
 var balancedStringSplit = function (s) {
 	let counter = 0;
 	let balancedStrNum = 0;
@@ -26,3 +27,4 @@ var balancedStringSplit = function (s) {
 
 	return balancedStrNum;
 };
+
