@@ -7,19 +7,24 @@
  * @param {string} s
  * @return {number}
  */
-var balancedStringSplit = function(s) {
-    let matchingTimes = 0;
-    let counterR = 0;
-    let counterL = 0;
-    for (let i = 0; i < s.length; i++) {
-        if (s[i] === "R") {
-            counterR++;
-        } else {
-            counterL++;
-        }
-        if (counterR === counterL) {
-            matchingTimes++;
-        }
-    }
-    return matchingTimes;
+
+var balancedStringSplit = function (s) {
+	let counter = 0;
+	let balancedStrNum = 0;
+
+	for (let i = 0; i < s.length; i++) {
+		switch (s.charAt(i)) {
+			case "R":
+				counter++;
+				break;
+			case "L":
+				counter--;
+				break;
+		}
+
+		if (counter === 0) balancedStrNum++;
+	}
+
+	return balancedStrNum;
 };
+
